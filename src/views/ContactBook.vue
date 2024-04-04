@@ -1,8 +1,6 @@
 <template>
   <div class="page row">
-    <div class="col-md-10">
-      <InputSearch v-model="searchText" />
-    </div>
+    <div class="col-md-10"><InputSearch v-model="searchText" /></div>
     <div class="mt-3 col-md-6">
       <h4>
         Danh bạ
@@ -37,6 +35,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import ContactCard from "@/components/ContactCard.vue";
 import InputSearch from "@/components/InputSearch.vue";
@@ -48,7 +47,6 @@ export default {
     InputSearch,
     ContactList,
   },
-
   data() {
     return {
       contacts: [],
@@ -117,6 +115,7 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .page {
   text-align: left;
